@@ -1,6 +1,6 @@
 @Library('groovy-shared-lib@master')_
 
-node("agent1") {
+node() {
     stage("demo") {
         git 'git@github.com:jenkins-docs/simple-java-maven-app.git'
         def myUtils = new org.demo.buildUtils()
